@@ -57,6 +57,9 @@ npm install
 ```bash
 docker compose up --build
 ```
+
+Перейти по ссылке http://localhost:3000/    
+
 - Остановка Docker
 ```bash
 docker down 
