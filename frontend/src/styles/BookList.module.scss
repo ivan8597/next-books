@@ -1,0 +1,33 @@
+.bookList {
+  margin-bottom: 20px;
+  padding: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}

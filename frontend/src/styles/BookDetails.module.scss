@@ -1,0 +1,58 @@
+.bookDetails {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+
+  .homeButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .info {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    h3 {
+      color: #666;
+      margin-bottom: 15px;
+    }
+  }
+
+  .reviews {
+    margin-top: 20px;
+  }
+} 

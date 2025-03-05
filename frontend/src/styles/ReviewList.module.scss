@@ -1,0 +1,32 @@
+.reviewList {
+  margin-top: 20px;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .rating {
+    color: #ffd700;
+    margin-bottom: 5px;
+  }
+
+  small {
+    color: #666;
+    display: block;
+    margin-top: 5px;
+  }
+} 
