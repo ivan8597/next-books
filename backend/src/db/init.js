@@ -1,15 +1,10 @@
-import pkg from 'pg';
-const { Pool } = pkg;
-
-const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 5432,
-});
+import pool from './pool.js';
 
 const initDB = async () => {
+  if (process.env.NODE_ENV === 'test') {
+    return; // Не инициализируем базу в тестах
+  }
+
   try {
     await pool.query(`
       CREATE TABLE IF NOT EXISTS reviews (
@@ -28,4 +23,4 @@ const initDB = async () => {
 
 initDB();
 
-export { pool }; 
+export { pool };
